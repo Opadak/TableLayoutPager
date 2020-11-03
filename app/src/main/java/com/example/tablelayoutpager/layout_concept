@@ -1,0 +1,11 @@
+레이아웃은 위젯 in 위젯
+
+ViewGroup이라는 클래스 아래에 존재.
+layout의 계층도
+Object-> View -> ViewGroup
+
+
+
+프로그래밍 언어에서 컨트롤(Control)이라 부르는 버튼(Button),텍스트뷰(TextView),에디트텍스트(EditText),라디어버튼(Radio Button),이미지뷰(ImageView)등을 위젯
+이라고 한다. 그런데 위젯은 단독으로 존재하지 않으며, 위젯을 담아 배치하는 틀이 바로 레이아웃이다.
+
