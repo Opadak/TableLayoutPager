@@ -1,0 +1,32 @@
+
+inflate
+동사
+1
+(공기나 가스로) 부풀리다[부풀다]
+
+Inflate your life jacket by pulling sharply on the cord.발음듣기
+
+끈을 세게 잡아 당겨 구명조끼를 부풀게 하시오.
+
+2
+(사실과 다르게) 부풀리다[과장하다]
+
+3
+(가격을[이]) 올리다[오르다] (→deflate, reflate)
+
+The principal effect of the demand for new houses was to inflate prices.발음듣기
+
+새 주택에 대한 수요가 가져온 주된 결과가 가격 인상이었다.
+
+
+
+
+
+inflater는 MainActivity의 onCreate() 속 setContentView(R.layout_main)도 inflate와 동일한 역한 역할을 수행한다.
+즉 화면을 보여는 아이이고
+View = inflater.inflate(R.layout.아무개, container, false) 이다.
+그래서 함수 내용중 view를 반환하는 아이들은 바로 return 해줄 수 있다.
+
+
+
+**  //inflater.inflater(객체화할 xml파일, 보여줄 레이아웃, 바로 inflate 할지 여부)
