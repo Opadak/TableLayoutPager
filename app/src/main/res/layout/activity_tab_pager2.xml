@@ -4,14 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TabPagerTwoActivity">
+    tools:context=".TabPager2Activity"
+    android:orientation="horizontal">
     <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tab_layout3"
+        android:id="@+id/tab_layout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <androidx.viewpager.widget.ViewPager
-        android:id="@+id/view_pager3"
+        android:id="@+id/view_pager2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
