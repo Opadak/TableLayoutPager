@@ -7,7 +7,6 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentStatePagerAdapter
 import com.google.android.material.tabs.TabLayout
 import kotlinx.android.synthetic.main.activity_tab_pager.*
-import java.util.*
 
 class TabPagerActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,7 +18,7 @@ class TabPagerActivity : AppCompatActivity() {
         tab_layout.addTab(tab_layout.newTab().setText("TWO"))
         tab_layout.addTab(tab_layout.newTab().setText("THREE"))
         //pagerAdapter 생성
-        val pagerAdapter = PagerAdapter(supportFragmentManager,3)
+        val pagerAdapter = FragmentPagerAdapter(supportFragmentManager,3)
         view_pager.adapter = pagerAdapter
 
         tab_layout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener{
@@ -47,7 +46,7 @@ class TabPagerActivity : AppCompatActivity() {
 // 페이저 탭 레이아웃이 상호작용하기 위해서는 Listener를 사용한다.
 // adapter는 pager를 위한것.
 
-class PagerAdapter(
+class FragmentPagerAdapter(
     fragmentManager: FragmentManager,  //fragment를 사용하겠다.
     val tabCount: Int
 ) :FragmentStatePagerAdapter(fragmentManager) {
